@@ -1,11 +1,8 @@
 ---
-title: "第1回：建築構造とリスク解析を振り返って"
+title: 第1回 建築構造とリスク解析を振り返って
 date: 2026-07-23
-tags: articles
-layout: base.njk
 ---
 
-<div class="article-content">
 
 ## 建築構造とリスク解析を振り返って
 
@@ -32,4 +29,3 @@ layout: base.njk
 瀬谷 均（せや ひとし）
 元 竹中工務店株式会社 技術研究所
 
-</div>
