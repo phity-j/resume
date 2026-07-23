@@ -1,0 +1,20 @@
+---
+layout: base.njk
+title: ホーム - 私の履歴書
+---
+
+<h2>記事一覧</h2>
+
+<ul class="article-list">
+  {%- for article in collections.articles | reverse -%}
+    <li class="article-item">
+      <h3 class="article-title">
+        <a href="{{ article.url }}">{{ article.data.title }}</a>
+      </h3>
+      <div class="article-date">{{ article.date }}</div>
+      <p style="margin-top: 10px;">
+        <a href="{{ article.url }}" class="btn">続きを読む</a>
+      </p>
+    </li>
+  {%- endfor -%}
+</ul>

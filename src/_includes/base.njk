@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title | default("私の履歴書") }}</title>
+  <meta name="description" content="私の履歴書 - Cosmic Design">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div class="stars"></div>
+  <div class="twinkling"></div>
+
+  <div class="container">
+    <header>
+      <h1><a href="/" style="color: white; text-decoration: none;">私の履歴書</a></h1>
+      <p>My Resume & Journey</p>
+    </header>
+    
+    <main class="glass-card">
+      {{ content | safe }}
+    </main>
+    
+    <footer style="text-align: center; margin-top: 2rem; color: #64748b; font-size: 0.9rem;">
+      &copy; 2026 私の履歴書. Built with 11ty & Pages CMS.
+    </footer>
+  </div>
+</body>
+</html>

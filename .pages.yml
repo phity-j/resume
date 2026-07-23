@@ -1,0 +1,24 @@
+media:
+  input: src/images
+  output: /images
+content:
+  - name: articles
+    label: Articles
+    type: collection
+    path: src/articles
+    view:
+      fields:
+        - title
+        - date
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: date
+        label: Date
+        type: date
+        required: true
+      - name: body
+        label: Content
+        type: rich-text
