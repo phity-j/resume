@@ -19,6 +19,9 @@ content:
         label: Date
         type: date
         required: true
+      - name: image
+        label: Thumbnail Image
+        type: image
       - name: body
         label: Content
         type: rich-text

@@ -1,6 +1,7 @@
 module.exports = function(eleventyConfig) {
-  // Pass through css folder
+  // Pass through css folder and images
   eleventyConfig.addPassthroughCopy("src/css");
+  eleventyConfig.addPassthroughCopy("src/images");
 
   return {
     pathPrefix: "/resume/",

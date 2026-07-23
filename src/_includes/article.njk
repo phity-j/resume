@@ -1,0 +1,9 @@
+---
+layout: base.njk
+---
+<article class="article-detail">
+  {% if image %}
+    <img src="{{ image | url }}" alt="{{ title }}" class="article-thumbnail">
+  {% endif %}
+  {{ content | safe }}
+</article>
