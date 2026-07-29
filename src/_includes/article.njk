@@ -1,9 +1,26 @@
 ---
 layout: base.njk
 ---
-<article class="article-detail">
+<section class="hero">
+  <div class="hero-inner">
+    <h1>{{ title }}</h1>
+    <div class="author-block">
+      <div class="author-info">
+        <div class="author-name">瀬谷 均</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<article class="article-wrap">
   {% if image %}
     <img src="{{ image | url }}" alt="{{ title }}" class="article-thumbnail">
   {% endif %}
+  
   {{ content | safe }}
+
+  <footer class="article-footer">
+    <div class="footer-note">私の履歴書</div>
+    <div class="footer-tag">Structural Engineering &amp; Risk Analysis</div>
+  </footer>
 </article>
